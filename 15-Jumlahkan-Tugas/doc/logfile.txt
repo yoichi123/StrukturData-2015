@@ -1,0 +1,40 @@
+Project documentation
+<---- javadoc command: ---->
+C:\Program Files (x86)\Java\jdk1.8.0_45\bin\javadoc.exe
+-sourcepath
+D:\Tugas\RO\KOMDAT\15-Jumlahkan-Tugas
+-source
+1.8
+-classpath
+C:\Program Files (x86)\BlueJ\lib\bluejcore.jar;C:\Program Files (x86)\BlueJ\lib\junit-4.8.2.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-core.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-device.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-gpio-extension.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-service.jar;D:\Tugas\RO\KOMDAT\15-Jumlahkan-Tugas
+-d
+D:\Tugas\RO\KOMDAT\15-Jumlahkan-Tugas\doc
+-encoding
+UTF-8
+-charset
+UTF-8
+-docletpath
+C:\Program Files (x86)\BlueJ\lib\bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+-doctitle
+15-Jumlahkan-Tugas
+-windowtitle
+15-Jumlahkan-Tugas
+-author
+-version
+-nodeprecated
+-package
+-link
+http://download.oracle.com/javase/8/docs/api/
+D:\Tugas\RO\KOMDAT\15-Jumlahkan-Tugas/Utama.java
+D:\Tugas\RO\KOMDAT\15-Jumlahkan-Tugas/Kelompok.java
+D:\Tugas\RO\KOMDAT\15-Jumlahkan-Tugas/Gabung.java
+<---- end of javadoc command ---->
+Loading source file D:\Tugas\RO\KOMDAT\15-Jumlahkan-Tugas\Utama.java...
+Loading source file D:\Tugas\RO\KOMDAT\15-Jumlahkan-Tugas\Kelompok.java...
+Loading source file D:\Tugas\RO\KOMDAT\15-Jumlahkan-Tugas\Gabung.java...
+D:\Tugas\RO\KOMDAT\15-Jumlahkan-Tugas\Gabung.java:4: error: <identifier> expected
+    private Kelompok kelompok[];q
+                                 ^
+1 error
