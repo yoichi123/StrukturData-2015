@@ -52,7 +52,7 @@ public class Client {
                 System.out.println("Kalah, angka = "+baris);
                 continue;
             }
-            else if(baris.equals("SELESAI")){
+             if(baris.equals("SELESAI")){
                break;
             }
         }
