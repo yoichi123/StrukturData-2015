@@ -25,7 +25,7 @@ public class Client {
             Scanner keyboard = new Scanner(System.in);
             System.out.print("Pesan: ");
             String ketikanSatuBaris = keyboard.nextLine();
-                    
+            ketikanSatuBaris = ketikanSatuBaris.trim().toUpperCase();        
             // Tulis ke socket
             Writer keluaranWriter = new OutputStreamWriter(socket.getOutputStream()); 
             BufferedWriter keluaranBuff = new BufferedWriter(keluaranWriter);

@@ -19,7 +19,7 @@ public class ProcessClientThread implements Runnable {
    /* private String WAKTU_AWAL="WAKTU N";
     private String[] WAKTU_AKHIR=WAKTU_AWAL.split(" "); */
     //private int N =2;
-    
+    private int a=6;
     private String SIAPA="SIAPA";
     private String WAKTU="WAKTU";
    // private String N="2";
@@ -60,14 +60,20 @@ public class ProcessClientThread implements Runnable {
         InputStream masukan = koneksi.getInputStream();
         BufferedReader masukanReader = new BufferedReader(new InputStreamReader(masukan)); 
         String baris = masukanReader.readLine();
-       
+        String[] terima = baris.split(" ");
         
         System.out.println(baris);
+        
+    
+        
+       
+        
+              
         
         OutputStream keluaran = koneksi.getOutputStream();
             BufferedWriter keluaranBuf = new BufferedWriter(new OutputStreamWriter(keluaran));
         
-       
+       baris = baris.trim().toUpperCase();
         if (baris.equals(SIAPA)){
                 Kirim=""+ip;
                 keluaran = koneksi.getOutputStream();
@@ -85,13 +91,24 @@ public class ProcessClientThread implements Runnable {
                 keluaranBuf.newLine();
                 keluaranBuf.flush();
             }
-         
+          
+           else if(terima[0].compareTo("WAKTU") == 0){ 
+               int ganti = Integer.parseInt(terima[1]);
+               Calendar kaalender = Calendar.getInstance();
+                kaalender.add(Calendar.HOUR_OF_DAY, ganti-7);
+                String Kirim = kaalender.getTime().toString();
+                keluaran = koneksi.getOutputStream();
+                keluaranBuf = new BufferedWriter (new OutputStreamWriter(keluaran));
+                keluaranBuf.write(Kirim);
+                keluaranBuf.newLine();
+                keluaranBuf.flush();
+            }
     
            
       else{
                 keluaran = koneksi.getOutputStream();
                 keluaranBuf = new BufferedWriter (new OutputStreamWriter(keluaran));
-                keluaranBuf.write("Perintah Tidak Dikenal");
+                keluaranBuf.write("input salah");
                 keluaranBuf.newLine();
                 keluaranBuf.flush();
             }
