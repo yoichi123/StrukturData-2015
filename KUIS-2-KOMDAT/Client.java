@@ -39,7 +39,7 @@ public class Client {
             masukanBuff = new BufferedReader(masukan);
             String baris = masukanBuff.readLine();
             System.out.println(baris);
-            if(baris.equals("TAMBAH")){
+            /*if(baris.equals("TAMBAH")){
                 masukan = new InputStreamReader(socket.getInputStream());
                 masukanBuff = new BufferedReader(masukan);
                 baris = masukanBuff.readLine();
@@ -57,7 +57,7 @@ public class Client {
             }
              if(baris.equals("SELESAI")){
              
-            }
+            }*/
         }
         
         
