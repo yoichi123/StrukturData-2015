@@ -16,6 +16,7 @@ target1.editor.x=576
 target1.editor.y=9
 target1.height=50
 target1.name=socketget
+target1.naviview.expanded=false
 target1.showInterface=false
 target1.type=ClassTarget
 target1.typeParameters=
