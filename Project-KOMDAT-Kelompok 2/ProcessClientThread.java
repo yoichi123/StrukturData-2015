@@ -272,3 +272,7 @@ public class ProcessClientThread implements Runnable {
     private Socket koneksi; 
 
 }
+/*Kelompok  : 2
+   PUTRA ARIFAH : 1408107010060
+   STEVEN lIUNARDI  : 1408107010048
+ */
